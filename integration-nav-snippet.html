@@ -1,0 +1,53 @@
+<!-- 
+  Shivalayam Makeup Studio - Virtual Makeup Consultant Integration
+  
+  This HTML snippet can be added to the main Shivalayam Makeup Studio website's navigation menu
+  to link to the Virtual Makeup Consultant tool. Replace [YOUR_NETLIFY_URL] with
+  the actual URL of your Netlify-deployed Virtual Makeup Consultant application.
+-->
+
+<li class="nav-item makeup-consultant-nav-item">
+  <a href="[YOUR_NETLIFY_URL]" class="nav-link" target="_blank">
+    <span class="nav-icon">💄</span>
+    <span class="nav-text">Virtual Makeup Consultant</span>
+  </a>
+</li>
+
+<!-- Add this CSS to your stylesheet or in the <head> section of your Shivalayam Makeup Studio website -->
+<style>
+  .makeup-consultant-nav-item .nav-link {
+    display: flex;
+    align-items: center;
+    color: #d85a7f !important;
+    font-weight: bold;
+  }
+  
+  .makeup-consultant-nav-item .nav-link:hover {
+    color: #c04b6e !important;
+  }
+  
+  .makeup-consultant-nav-item .nav-icon {
+    margin-right: 8px;
+  }
+  
+  /* Add a subtle animation */
+  .makeup-consultant-nav-item .nav-link {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .makeup-consultant-nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #d85a7f;
+    transition: width 0.3s ease;
+  }
+  
+  .makeup-consultant-nav-item .nav-link:hover::after {
+    width: 100%;
+  }
+</style> 
